@@ -49,6 +49,76 @@ button {
     padding: 12px 16px;
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     border-radius: 30px;
-
-
 }
+
+/* footer */
+footer {
+    background: url(../assets/footer-bg.png) no-repeat;
+    background-size: cover;
+    padding: 120px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.techwave-logo2 {
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+
+.footer-icons-links {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 40px;
+}
+
+/* .footer-icons-links div {
+    display: flex;
+    font-size: 1.2rem;
+    color: #FAFAFA;
+    opacity: 60%;
+    gap: 8px;
+    text-align: center;
+}
+
+
+footer > div:last-child p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FAFAFA;
+    opacity: 60%;
+} */
+
+footer img {
+    filter: brightness(0) invert(100%);
+}
+
+.footer-icons-links div {
+    display: flex;
+    /* font-size: 1.2rem; */
+    color: #FAFAFA;
+    /* opacity: 60%; */
+    gap: 8px;
+    text-align: center;
+}
+
+.footer-icons-links p {
+    font-size: 1.2rem;
+    opacity: 60%;
+}
+
+.footer-icons-links div p {
+    font-size: 1.2rem;
+    opacity: 60%;
+}
+
+footer > div:last-child p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FAFAFA;
+    opacity: 60%;
+}
+
+
+
