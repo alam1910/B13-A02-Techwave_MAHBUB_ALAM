@@ -43,13 +43,71 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-button { 
+button {
     color: #FFFFFF;
     font-weight: 600;
     padding: 12px 16px;
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     border-radius: 30px;
 }
+
+/* Meet the Host */
+.meet-the-host {
+    /* border-left: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+    /* margin-bottom: 120px; */
+}
+
+.titleo-of-host {
+    /* background-color: #1A0B2E; */
+
+}
+
+.host-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    /* gap: 40px; */
+    /* background-color: #1A0B2E; */
+
+}
+
+.alex-portfolio {
+    display: flex;
+    background-color: #250D44;
+    /* background-color: #230E3D; */
+    width: 1200px;
+    /* margin: auto; */
+    gap: 24px;
+    align-items: center;
+    padding: 40px 40px;
+    border-radius: 40px;
+}
+
+.content-of-alex {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.content-of-alex p {
+    color: #FAFAFA;
+    opacity: 60%;
+}
+
+.name-title {
+    font-size: 2.45rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+
 
 /* footer */
 footer {
@@ -72,23 +130,6 @@ footer {
     /* flex-direction: row; */
     gap: 40px;
 }
-
-/* .footer-icons-links div {
-    display: flex;
-    font-size: 1.2rem;
-    color: #FAFAFA;
-    opacity: 60%;
-    gap: 8px;
-    text-align: center;
-}
-
-
-footer > div:last-child p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #FAFAFA;
-    opacity: 60%;
-} */
 
 footer img {
     filter: brightness(0) invert(100%);
@@ -113,12 +154,9 @@ footer img {
     opacity: 60%;
 }
 
-footer > div:last-child p {
+footer>div:last-child p {
     font-size: 1.5rem;
     text-align: center;
     color: #FAFAFA;
     opacity: 60%;
 }
-
-
-
