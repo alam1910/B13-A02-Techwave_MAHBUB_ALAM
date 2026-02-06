@@ -99,7 +99,24 @@ button {
     color: #FAFAFA;
     opacity: 60%;
 }
+/* i dont know how can i make this section like the figma design ! */
+.alex-icons img {
 
+    padding: 13px;
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+
+
+    /* height: 40px; */
+    /* box-sizing: border-box; */
+    /* border: 1px greenyellow; */
+    /* background-color: red; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* gap: 50px; */
+    /* align-items: center; */
+
+}
 .name-title {
     font-size: 2.45rem;
     font-weight: 700;
