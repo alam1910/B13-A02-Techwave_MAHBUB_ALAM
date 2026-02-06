@@ -51,6 +51,32 @@ button {
     border-radius: 30px;
 }
 
+/* Featured Episodes */
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    /* width: 1200px; */
+    /* align-items: center; */
+    gap: 30px;
+
+}
+
+.card {
+    /* display: flex; */
+    /* background-color: #250D44; */
+    /* background-color: #230E3D; */
+    /* width: 1200px; */
+    /* gap: 24px; */
+    /* align-items: center; */
+    width: 380px;
+    height: 226px;
+    /* padding: 24px 24px; */
+    /* border-radius: 40px; */
+}
+
+
+
 /* Meet the Host */
 .meet-the-host {
     /* border-left: 200px; */
@@ -61,11 +87,6 @@ button {
     background-color: #1A0B2E;
     padding-bottom: 120px;
     /* margin-bottom: 120px; */
-}
-
-.titleo-of-host {
-    /* background-color: #1A0B2E; */
-
 }
 
 .host-title {
@@ -95,18 +116,17 @@ button {
     flex-direction: column;
     gap: 16px;
 }
+
 .content-of-alex p {
     color: #FAFAFA;
     opacity: 60%;
 }
+
 /* i dont know how can i make this section like the figma design ! */
 .alex-icons img {
-
     padding: 13px;
     border: 1px solid rgba(83, 60, 114, 1);
     border-radius: 50%;
-
-
     /* height: 40px; */
     /* box-sizing: border-box; */
     /* border: 1px greenyellow; */
@@ -115,8 +135,8 @@ button {
     /* flex-direction: row; */
     /* gap: 50px; */
     /* align-items: center; */
-
 }
+
 .name-title {
     font-size: 2.45rem;
     font-weight: 700;
