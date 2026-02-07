@@ -9,6 +9,13 @@
     font-optical-sizing: auto;
 }
 
+/* Shared */
+
+.font-color-white-opacity60 {
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -51,30 +58,138 @@ button {
     border-radius: 30px;
 }
 
+
+
+/* About the Podcast */
+
+.podcast {
+    background-color: #1A0B2E;
+
+}
+
+.podcast-h {
+    color: #FFFFFF;
+    font-size: 3rem;
+    /* font-weight: 600; */
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.podcast-text {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 80px;
+    line-height: 30px;
+
+}
+
+.all-ratings {
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 80px;
+
+}
+
+.all-ratings, .text-below-ratings {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* text-align: center; */
+}
+
+.text-below-ratings {
+    padding-top: 25px;
+    padding-bottom: 120px;
+}
+
+hr {
+    width: 1200px;
+    opacity: 10%;
+    margin: 0 auto ;
+}
+
 /* Featured Episodes */
+
+.episodes {
+    /* width: 1200px; */
+    /* height: 538px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: 0 auto; */
+    /* align-items: center; */
+    background-color: #1A0B2E;
+    padding: 120px 120px;
+}
+
+.episode-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 40px;
+    /* gap: 40px; */
+    /* background-color: #1A0B2E; */
+
+}
+
 
 .card-holder {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* border: 1px solid red; */
+
     /* width: 1200px; */
     /* align-items: center; */
-    gap: 30px;
-
 }
+
 
 .card {
-    /* display: flex; */
-    /* background-color: #250D44; */
-    /* background-color: #230E3D; */
-    /* width: 1200px; */
-    /* gap: 24px; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
     width: 380px;
-    height: 226px;
-    /* padding: 24px 24px; */
-    /* border-radius: 40px; */
+    background-color: #250D44;
+    /* This is the culprit */
+    /* height: 226px; */
+    /* border: 1px solid red; */
+    border-radius: 24px;
 }
 
+iframe {
+    width: 100%;
+    border: none;
+    /* border-radius: 24px; */
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.text-of-details {
+    padding: 24px;
+}
+
+.headline-of-card {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding-bottom: 12px;
+}
+
+.para-of-card {
+    padding-bottom: 12px;
+
+}
+
+.para-of-card2 {
+    color: #00FF88;
+}
+
+.img-text {
+    display: flex;
+    gap: 6px;
+}
 
 
 /* Meet the Host */
@@ -86,7 +201,6 @@ button {
     gap: 40px;
     background-color: #1A0B2E;
     padding-bottom: 120px;
-    /* margin-bottom: 120px; */
 }
 
 .host-title {
@@ -117,10 +231,7 @@ button {
     gap: 16px;
 }
 
-.content-of-alex p {
-    color: #FAFAFA;
-    opacity: 60%;
-}
+
 
 /* i dont know how can i make this section like the figma design ! */
 .alex-icons img {
@@ -174,9 +285,7 @@ footer img {
 
 .footer-icons-links div {
     display: flex;
-    /* font-size: 1.2rem; */
     color: #FAFAFA;
-    /* opacity: 60%; */
     gap: 8px;
     text-align: center;
 }
@@ -194,6 +303,4 @@ footer img {
 footer>div:last-child p {
     font-size: 1.5rem;
     text-align: center;
-    color: #FAFAFA;
-    opacity: 60%;
-}
+    }
