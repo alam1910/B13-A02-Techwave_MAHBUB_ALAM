@@ -16,6 +16,26 @@
     opacity: 60%;
 }
 
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+button {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 12px 16px;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* shared end */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,16 +70,72 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-button {
-    color: #FFFFFF;
-    font-weight: 600;
-    padding: 12px 16px;
-    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
-    border-radius: 30px;
+
+
+/* techwave microphone */
+
+.techwave-micro {
+    background: url(../assets/hero-bg.png) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* gap: 16px; */
+
 }
 
+.hero-images {
+    position: relative;
+    width: fit-content;
+    padding-bottom: 40px;
+    padding-top: 101px;
+}
 
+.hero-circle {
+    display: block;
+}
 
+.microphone {
+    position: absolute;
+    top: 50%;
+    /* adjust these two values to place it perfectly */
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.white-logo-techwave {
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.text-p-of-micro {
+    padding-bottom: 24px;
+}
+
+.btn-green {
+    color: #00FF88;
+    background: none;
+    border: 1px solid #00FF88;
+}
+
+.new-badge {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    background: #00FF88;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+
+}
+
+.two-button{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
 /* About the Podcast */
 
 .podcast {
@@ -68,11 +144,8 @@ button {
 }
 
 .podcast-h {
-    color: #FFFFFF;
-    font-size: 3rem;
-    /* font-weight: 600; */
-    text-align: center;
     padding-bottom: 12px;
+    padding-top: 50px;
 }
 
 .podcast-text {
@@ -91,7 +164,8 @@ button {
 
 }
 
-.all-ratings, .text-below-ratings {
+.all-ratings,
+.text-below-ratings {
     display: flex;
     gap: 80px;
     justify-content: center;
@@ -107,30 +181,72 @@ button {
 hr {
     width: 1200px;
     opacity: 10%;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
+
+
+/* Why Choose TechWave */
+
+.techwave {
+    background-color: #1A0B2E;
+}
+
+.whytechwave-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-techwave {
+    background-color: #250D44;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.box-techwave:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+.box-techwave:nth-child(1) {
+    grid-row: span 2;
+}
+
+.box-techwave:nth-child(2),
+.box-techwave:nth-child(3) {
+    grid-column: span 2;
+}
+
+.box-techwave:nth-child(4) {
+    grid-column: span 2;
+    height: ;
+}
+
+.title-of-techwave {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+
+.main-title-of-techwave {
+    padding-bottom: 40px;
+}
+
+
+
 
 /* Featured Episodes */
 
 .episodes {
-    /* width: 1200px; */
-    /* height: 538px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* margin: 0 auto; */
-    /* align-items: center; */
     background-color: #1A0B2E;
     padding: 120px 120px;
 }
 
 .episode-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    text-align: center;
     padding-bottom: 40px;
-    /* gap: 40px; */
-    /* background-color: #1A0B2E; */
 
 }
 
@@ -140,11 +256,7 @@ hr {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    /* flex-direction: row; */
-    /* border: 1px solid red; */
 
-    /* width: 1200px; */
-    /* align-items: center; */
 }
 
 
@@ -158,6 +270,13 @@ hr {
     /* border: 1px solid red; */
     border-radius: 24px;
 }
+
+
+.card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
 
 iframe {
     width: 100%;
@@ -203,24 +322,14 @@ iframe {
     padding-bottom: 120px;
 }
 
-.host-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    text-align: center;
-    /* gap: 40px; */
-    /* background-color: #1A0B2E; */
 
-}
 
 .alex-portfolio {
     display: flex;
     background-color: #250D44;
-    /* background-color: #230E3D; */
     width: 1200px;
-    /* margin: auto; */
+    margin: 0 auto;
     gap: 24px;
-    align-items: center;
     padding: 40px 40px;
     border-radius: 40px;
 }
@@ -303,4 +412,4 @@ footer img {
 footer>div:last-child p {
     font-size: 1.5rem;
     text-align: center;
-    }
+}
