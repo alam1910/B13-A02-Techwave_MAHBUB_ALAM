@@ -78,42 +78,46 @@ body {
 } */
 
 .microphone {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  animation: float 4s ease-in-out infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
-  0% {
-    transform: translate(-50%, -60%);
-  }
-  50% {
-    transform: translate(-50%, -65%);
-  }
-  100% {
-    transform: translate(-50%, -60%);
-  }
+    0% {
+        transform: translate(-50%, -60%);
+    }
+
+    50% {
+        transform: translate(-50%, -65%);
+    }
+
+    100% {
+        transform: translate(-50%, -60%);
+    }
 }
 
 .new-badge {
-  animation: pulse 2s ease-in-out infinite;
+    animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
-  }
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
+    }
 }
 
 
@@ -137,6 +141,10 @@ nav {
 .nav-menu a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+nav .hamburger {
+    display: none;
 }
 
 .techwave-logo {
@@ -525,9 +533,17 @@ footer>div:last-child p {
 }
 
 @media (max-width: 576px) {
-    nav {
+    /* nav {
         flex-direction: column;
         gap: 16px;
+    } */
+
+    nav .nav-menu {
+        display: none;
+    }
+
+    nav .hamburger {
+        display: block;
     }
 
     .all-ratings,
